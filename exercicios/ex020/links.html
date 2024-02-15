@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Links</title>
+	<style>
+		/* SELETORES PERSONALIZADOS
+		. = class
+		: = pseudo-class
+		# = id 
+		:: = pseudo-element
+		> = children
+		*/
+		body {
+			font-family: sans-serif;
+		}
+		a {
+			color: hsl(291.69, 65.217%, 82.031%);
+			text-decoration: none;
+			font-weight: bold;	
+		}
+		a:visited {
+			color: hsl(291.69, 65.217%, 56.25%);
+		}
+		a:hover {
+			color: hsl(291.69, 65.217%, 18.75%);
+			text-decoration: underline;
+		}
+		a:active {
+			color: hsl(314.13, 93.75%, 68.75%);
+		}
+		.especial{
+			background-color: hsl(291.69, 65.217%, 18.75%);
+		}
+		.especial:hover {
+			color: hsl(291.69, 65.217%, 82.031%);
+		}
+		.especial::before {
+			content: ' ↪ ';
+		}
+		.especial::after {
+			content: ' ↩ ';
+	</style>
+</head>
+<body>
+   <h1>Personalizando Links</h1>
+   <ul>
+   	<li><a href="https://github.com" target="_blank">github</a></li>
+   	<li><a href="https://twitter.com" target="_blank">twitter</a></li>
+   	<li><a href="https://www.youtube.com" target="_blank" class="especial">youtube</a></li>
+   </ul>
+</body>
+</html>

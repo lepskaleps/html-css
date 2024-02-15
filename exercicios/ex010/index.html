@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trabalhando com links</title>
+</head>
+<body>
+   <h1>Usando links Externos</h1>
+   <p>Acesse o site do <a href="https://youtu.be/En-GfIro5Kk?si=stwyB_zVvzNA1fyb" target="_blank" rel="external">site situoso sirtual(com target blank e rel external)</a> </p><!-- Se deixado somente a tag A href, sem o uso das tags target="_blank" e rel="external", o site será sobreposto pelo o que voce impôs no link, target significa abrir uma tela em branco, e o rel induz ser um link externo-->
+   <p>Acesse o site do <a href="https://youtu.be/En-GfIro5Kk?si=stwyB_zVvzNA1fyb">site situoso sirtual</a></p>
+   <h1>Usando links Internos</h1>
+   <p>Essa é a <a href="pag002.html"rel="next" target="_self">Segunda Página</a> do meu site</p>
+   <p>Essa é a <a href="noticias/pag003.html" target="_self" rel="next" >minha página de notícias </a> do meu site</p><!-- a target _self é para dizer que o link está dentro da própia página -->
+   <h1>Links Para Download</h1>
+   <ul>
+      <li> <a href="livro/20 - Mini-projeto Cordel.pdf" download="20 - Mini-projeto Cordel.pdf" type="application/pdf">Baixar Livro em PDF</a></li>
+      <li> <a href="livro/20 - Mini-projeto Cordel.zip" download="20 - Mini-projeto Cordel.zip" type="application/zip">Baixar Livro em ZIP</a></li><!-- por enquanto so ta funcionando com o zip de forma direta, mas basta dar botão direito e salvar arquivo como que daí salva o pdf -->
+   </ul><!-- para saber os medias types, existe o site iana.org -->
+</body>
+</html>

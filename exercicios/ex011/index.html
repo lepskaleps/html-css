@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mídias em HTML5</title>
+</head>
+<body>
+   <h1>Imagens Dinâmicas</h1>
+   <p>Tente expandir e comprimir a aba para ver os tamanhos diferentes de fotos</p>
+   <picture>
+  <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+  <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+   	<img src="imagens/foto-g.png" alt="foto flexivel">
+   </picture>
+   <!-- O comando não aparece de forma automatica, precisara digitar manualmente o media="(max-width:#px)" srcset="#" depois do source-->
+   <!-- o Picture reúne varias imagens em uma tag só-->
+   <!-- A BASE SEMPRE SERÁ A IMAGEM PADRÃO A SER CARREGADA!!!, SEMPRE EM UMA ORDEM CERTA-->
+
+   <h1>Reproduzindo Audio</h1>
+   <p>Aqui estamos a reproduzir um áudio em HTML5</p>
+   <!-- 
+   (<audio src="#" controls autoplay></audio>)Formatos de Audio:mp3, wav, ogg(para por somente uma midia-->
+
+   <audio preload="auto" autoplay controls loop>
+      <source src="midia/rickrolled.mp3" type="audio/mpeg">
+      <source src="midia/rickrolled.ogg" type="audio/ogg">
+     <source src="midia/rickrolled.wav" type="audio/wav">
+    
+   </audio>
+       <p>Infelizmente seu navegador não é compatível com as faixas de audios disponíveis</p>
+      <p>Para baixar-lo, <a href="midia/rickrolled.mp3">Clique Aqui</a></p>
+</body>
+</html>
